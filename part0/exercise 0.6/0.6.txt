@@ -1,0 +1,16 @@
+user->browser: click on the save button
+
+note over browser:
+It is used as application software for world wide web  
+end note
+
+browser->browser: redrawNotes()
+browser->browser: sendToServer(note)
+
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server-->browser: message sent to the browser
+
+note over server:
+It provide functionality for other programers
+end note over 
